@@ -1,7 +1,6 @@
 import React, { Component, Suspense } from "react";
 
 // Importing Section
-const Navbar = React.lazy(() => import("../../component/Navbar/NavBar"));
 
 const Section = React.lazy(() => import("./Section"));
 const About = React.lazy(() => import("../../component/About"));
@@ -69,12 +68,6 @@ class Landing extends Component {
     return (
       <React.Fragment>
         <Suspense fallback={this.PreLoader()}>
-          {/* Importing Navbar */}
-          <Navbar
-            navItems={this.state.navItems}
-            navClass={this.state.navClass}
-            imglight={this.state.imglight}
-          />
 
           {/* Importing Section */}
           <Section />

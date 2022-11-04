@@ -8,7 +8,6 @@ import graphic from "./images/graphic3.svg";
 import React, { Component } from "react";
 
 class Register extends Component {
-
   render() {
     return (
       <React.Fragment>
