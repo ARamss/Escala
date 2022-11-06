@@ -31,7 +31,7 @@ app.use(bodyParser.json());
 app.use("/", express.static(path.resolve(__dirname, "../public")));
 
 //global routes config
-// app.use(base_api, require("./routes/index"));
+app.use(base_api, require("./routes/index"));
 
 app.listen(process.env.PORT || 5050, () => {
   success("Server is running on port: ", PORT);
