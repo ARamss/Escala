@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 
 // Import Background Image
-import Img1 from "../assets/images/about/img-1.png";
-import Img2 from "../assets/images/about/img-2.png";
+import Img1 from "../../assets/images/about/img-1.png";
+import Img2 from "../../assets/images/about/img-2.png";
 
 //import icon
 import FeatherIcon from "feather-icons-react";

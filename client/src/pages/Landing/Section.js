@@ -19,7 +19,7 @@ class Section extends Component {
                 {/*<p className="text-uppercase font-weight-bold f-14 mb-4">Smart candidates</p>*/}
                 <img src={logolight} alt="" className="" style={{ width: 155, marginBottom: 15 }} />
                 <h1 className="hero-4-title mb-4 line-height-1_4" style={{ color: "#fff"}}>La plataforma profesional, hecha para ti.</h1>
-                <p className="text-muted mb-4 pb-3">Aplicamos de forma instantanea a cientos de vacantes disponibles para ti. Agrega tus datos, aplica y mira como te llegan ofertas al instante.</p>
+                <p className="text-muted mb-4 pb-3">Tu CV digital y aplica de forma instantanea a cientos de vacantes disponibles para ti. Agrega tus datos, aplica y mira como te llegan ofertas al instante.</p>
                 <Link to="#" className="btn btn-primary">¿Cómo funciona?</Link>
               </div>
             </Col>

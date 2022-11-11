@@ -7,7 +7,7 @@ import { Col, Container, Form, FormGroup, Input, Label, Row , Button} from "reac
 
 
 // Import Background Image
-import ContactImg from "../assets/images/contact-img.png";
+import ContactImg from "../../assets/images/contact-img.png";
 
 export default class Contact extends Component {
   render() {

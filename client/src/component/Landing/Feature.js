@@ -3,9 +3,9 @@ import { Container, Row, Col, TabContent, TabPane, Nav, NavItem, NavLink } from 
 import classnames from 'classnames';
 
 // Import Image
-import Img1 from "../assets/images/features/img-1.png";
-import Img2 from "../assets/images/features/img-2.png";
-import Img3 from "../assets/images/features/img-3.png";
+import Img1 from "../../assets/images/features/img-1.png";
+import Img2 from "../../assets/images/features/img-2.png";
+import Img3 from "../../assets/images/features/img-3.png";
 
 class Feature extends Component {
   constructor(props) {

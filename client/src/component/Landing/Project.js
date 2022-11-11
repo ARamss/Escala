@@ -11,12 +11,12 @@ import FeatherIcon from "feather-icons-react";
 import { Link } from "react-router-dom";
 
 // feature Image
-import Img1 from "../assets/images/project/img-1.jpg";
-import Img2 from "../assets/images/project/img-2.jpg";
-import Img3 from "../assets/images/project/img-3.jpg";
-import Img4 from "../assets/images/project/img-4.jpg";
-import Img5 from "../assets/images/project/img-5.jpg";
-import Img6 from "../assets/images/project/img-6.jpg";
+import Img1 from "../../assets/images/project/img-1.jpg";
+import Img2 from "../../assets/images/project/img-2.jpg";
+import Img3 from "../../assets/images/project/img-3.jpg";
+import Img4 from "../../assets/images/project/img-4.jpg";
+import Img5 from "../../assets/images/project/img-5.jpg";
+import Img6 from "../../assets/images/project/img-6.jpg";
 
 export default class Project extends Component {
   constructor(props) {

@@ -59,7 +59,7 @@ class Footer extends Component {
         {/* Footer Start */}
         <footer
           className="footer"
-          style={{ backgroundImage: "url(" + footer_image + ")" }}
+          style={{ backgroundColor: "#000",backgroundImage: "url(" + footer_image + ")" }}
         >
           <Container>
             <Row>
@@ -76,7 +76,7 @@ class Footer extends Component {
                 <Row>
                   {/* Render Footer Link */}
                   {this.state.links.map((item, key) => (
-                    <Col md={4} key={key}>  
+                    <Col md={4} key={key}>
                     <h4 className="text-white f-22 font-weight-normal mb-3">
                           {item.title}
                         </h4>

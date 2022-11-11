@@ -4,11 +4,11 @@ import { Col, Container, Row } from "reactstrap";
 import Slider from "react-slick";
 
 // Import client   Image
-import Icon from "../assets/images/testi-icon.png";
-import Img1 from "../assets/images/user/img-1.jpg";
-import Img2 from "../assets/images/user/img-2.jpg";
-import Img3 from "../assets/images/user/img-3.jpg";
-import Img4 from "../assets/images/user/img-4.jpg";
+import Icon from "../../assets/images/testi-icon.png";
+import Img1 from "../../assets/images/user/img-1.jpg";
+import Img2 from "../../assets/images/user/img-2.jpg";
+import Img3 from "../../assets/images/user/img-3.jpg";
+import Img4 from "../../assets/images/user/img-4.jpg";
 
 export default class Clients extends Component {
   constructor(props) {
@@ -63,7 +63,7 @@ export default class Clients extends Component {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,  
+            slidesToShow: 2,
             infinite: true,
             centerPadding : '20px'
           }
@@ -71,7 +71,7 @@ export default class Clients extends Component {
         {
           breakpoint: 0,
           settings: {
-            slidesToShow: 1,  
+            slidesToShow: 1,
             infinite: true,
             centerPadding : '20px'
           }

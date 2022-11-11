@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { Col, Container, Row } from "reactstrap";
 
 // Import Background Image
-import Background from "../assets/images/service-icon-bg.png";
-import Icon1 from "../assets/images/services-icon/icon-1.png";
-import Icon2 from "../assets/images/services-icon/icon-2.png";
-import Icon3 from "../assets/images/services-icon/icon-3.png";
+import Background from "../../assets/images/service-icon-bg.png";
+import Icon1 from "../../assets/images/services-icon/icon-1.png";
+import Icon2 from "../../assets/images/services-icon/icon-2.png";
+import Icon3 from "../../assets/images/services-icon/icon-3.png";
 import { Link } from "react-router-dom";
 
 export default class Services extends Component {
