@@ -14,15 +14,34 @@ const ResumeSchema = new Schema({
   skills: [
     {
       Title: String,
-      Percent: Number,
+      Percent: Number
     },
   ],
-  Experience: [
+  experience: [
     {
       rangeStart: String,
       rangeEnd: String,
       Title: String,
-      Description: String,
+      Description: String
+    },
+  ],
+  education: [
+    {
+      rangeStart: String,
+      rangeEnd: String,
+      Title: String,
+      Description: String
+    },
+  ],
+  socials: [
+    {
+      url: Number
+    },
+  ],
+  abilities: [
+    {
+      Title: String,
+      Description: String
     },
   ],
 
