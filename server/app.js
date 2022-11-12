@@ -24,9 +24,6 @@ mongoose.connect(MDB, (err, res) => {
 // Bring Models
 require('./models/user')
 
-//global routes config
-app.use(base_api, require("./routes/index"));
-
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -37,6 +34,8 @@ app.use(bodyParser.json());
 //generate public directory
 app.use("/", express.static(path.resolve(__dirname, "../public")));
 
+//global routes config
+app.use(base_api, require("./routes/index"));
 
 app.listen(process.env.PORT || 5050, () => {
   success("Server is running on port: ", PORT);

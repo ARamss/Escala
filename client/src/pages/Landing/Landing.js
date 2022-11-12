@@ -10,6 +10,8 @@ const Project = React.lazy(() => import("../../component/Landing/Project"));
 const Clients = React.lazy(() => import("../../component/Landing/Clients"));
 const Contact = React.lazy(() => import("../../component/Landing/Contact"));
 const Footer = React.lazy(() => import("../../component/Footer/Footer"));
+const Navbar = React.lazy(() => import("../../component/Navbar/Navbar"));
+
 
 // import { Spinner } from "reactstrap";
 
@@ -68,6 +70,7 @@ class Landing extends Component {
     return (
       <React.Fragment>
         <Suspense fallback={this.PreLoader()}>
+          <Navbar />
 
           {/* Importing Section */}
           <Section />
