@@ -18,14 +18,14 @@ export default class About extends Component {
             <Row className="justify-content-center">
               <Col lg={7}>
                 <div className="text-center mb-5">
-                  <h2 className="">About Us</h2>
-                  <p className="text-muted">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi commodi consequatur.</p>
+                  <h2 className="">¿Cómo funciona?</h2>
+                  <p className="text-muted">Genera tu resume digital y aplica a cientos de vacantes al instante.</p>
                 </div>
               </Col>
             </Row>
             <Row>
               <Col lg={4}>
-                <h2 className="font-weight-normal line-height-1_4 mb-4">Productive & Customizable For <span className="font-weight-medium">Developers</span></h2>
+                <h2 className="font-weight-normal line-height-1_4 mb-4">Creado y Diseñado Para <span className="font-weight-medium">Profesionales</span></h2>
                 <p className="text-muted mb-4">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil atque corrupti molestiae.</p>
                 <p className="f-17 text-muted"><FeatherIcon className="icon-xs text-primary icon-fill-primary icon mr-2" icon="grid" /> Marketing program activities</p>
                 <p className="f-17 text-muted"><FeatherIcon className="icon-xs text-primary icon-fill-primary icon mr-2" icon="layout" /> Customization product</p>

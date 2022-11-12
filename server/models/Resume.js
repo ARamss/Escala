@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Create Link Schema
+
+// Create Resume Schema
 const ResumeSchema = new Schema({
   brief: {
     type: String,
@@ -33,18 +34,18 @@ const ResumeSchema = new Schema({
       Description: String
     },
   ],
-  socials: [
-    {
-      url: Number
-    },
-  ],
   abilities: [
     {
       Title: String,
       Description: String
     },
   ],
+  socials: [
+    {
+      url: Number
+    },
+  ]
 
 });
 
-module.exports = Resume = mongoose.model('resume', ResumeSchema);
+module.exports = Link = mongoose.model('Resume', ResumeSchema);

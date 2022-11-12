@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const {ObjectId} = mongoose.Schema.Types
 
 // Resume Schema
-// const ResumeSchema = require('./Resume').schema;
+const ResumeSchema = require('./Resume').schema;
 
 // Create User Schema
-const UserSchema = new Schema({
+const userSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -13,6 +13,12 @@ const UserSchema = new Schema({
     trim: true
   },
   lastname: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true
+  },
+  slug: {
     type: String,
     required: true,
     unique: true,
@@ -46,4 +52,4 @@ const UserSchema = new Schema({
   }
 });
 
-module.exports = User = mongoose.model('user', UserSchema);
+mongoose.model('User', userSchema);
