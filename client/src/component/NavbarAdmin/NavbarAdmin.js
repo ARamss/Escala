@@ -31,7 +31,7 @@ const NavbarAdmin = () => {
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/login'>Salir</NavBtnLink>
+          <NavBtnLink to='/entrar'>Salir</NavBtnLink>
         </NavBtn>
       </Nav>
     </>

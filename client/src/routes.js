@@ -10,7 +10,6 @@ const routes = [
   { path: "/admin", component: Admin },
   { path: "/entrar", component: Login },
   { path: "/registro", component: Register },
-
 ];
 
 export default routes;

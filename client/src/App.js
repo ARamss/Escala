@@ -1,39 +1,71 @@
+import React,{useEffect,createContext,useReducer,useContext} from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.scss";
-
-import React, { Component } from "react";
-import routes from "../src/routes";
-import {
-  withRouter,
-  Route,
-  Switch,
-  BrowserRouter as Router,
-} from "react-router-dom";
-
-//import style
 import "./assets/css/pe-icon-7.css";
 import "./assets/scss/themes.scss";
+import Landing from "./pages/Landing/Landing";
+import Resume from "./pages/Resume/pages/Resume";
+import Admin from "./pages/Admin/Admin";
+import Login from "./pages/Auth/Login";
+import Register from "./pages/Auth/Register";
+import {
+  Route,
+  Switch,
+  BrowserRouter,
+  useHistory
+} from "react-router-dom";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    return (
-      <React.Fragment>
-        <Router>
-          <Switch>
-            {routes.map((route, idx) => (
-              <Route path={route.path} component={route.component} key={idx} exact/>
-            ))}
-          </Switch>
-        </Router>
-      </React.Fragment>
-    );
-  }
+//import reducer
+import {reducer,initialState} from './reducers/userReducer'
+
+export const UserContext = createContext()
+
+const Routing =()=>{
+  //user auth logic
+  const history = useHistory()
+  const {state,dispatch} = useContext(UserContext)
+  useEffect(()=>{
+    const user = JSON.parse(localStorage.getItem("user"))
+    if(user){
+      dispatch({type:"USER",payload:user})
+    }
+    else{
+      history.push('/')
+    }
+  },[])
+
+  return (
+    <Switch>
+        <Route exact path="/">
+           <Landing/>
+        </Route>
+        <Route path="/entrar">
+           <Login/>
+        </Route>
+        <Route path="/registro">
+           <Register/>
+        </Route>
+        <Route path="/resume">
+           <Resume/>
+        </Route>
+        <Route exact path="/admin">
+           <Admin/>
+        </Route>
+    </Switch>
+  )
 }
 
-export default withRouter(App);
+function App(){
+  const [state,dispatch] = useReducer(reducer,initialState)
+  return (
+    <UserContext.Provider value={{state,dispatch}}>
+        <BrowserRouter>
+             <Routing/>
+        </BrowserRouter>
+    </UserContext.Provider>
+  );
+}
+
+export default App;

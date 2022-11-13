@@ -35,10 +35,6 @@ const userSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
-  date: {
-    type: Date,
-    default: Date.now
-  },
   theme: {
     type: Number,
     default: 1

@@ -18,6 +18,7 @@ class Landing extends Component {
       </div>
     );
   };
+
   render() {
     return (
       <React.Fragment>
