@@ -1,7 +1,6 @@
 import React, { Component, Suspense } from "react";
 
-// Importing Section
-
+// Importing Sections
 const Section = React.lazy(() => import("./Section"));
 const About = React.lazy(() => import("../../component/Landing/About"));
 const Services = React.lazy(() => import("../../component/Landing/Services"));

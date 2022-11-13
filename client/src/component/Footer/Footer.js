@@ -66,7 +66,7 @@ class Footer extends Component {
               <Col lg={4}>
                 <div className="mb-5">
                   <Link to="#">
-                    <img src={logolight} alt="" className="" height="35" />
+                    <img src={logolight} alt="" className="" height="35" style={{ width: 135 }} />
                   </Link>
                   <p className="text-white-50 my-4">Cras ultricies mi eu turpis sit hendrerit fringilla vestibulum ante ipsum primis in faucibus ultrices posuere cubilia.</p>
                   <Link to="#" className="text-white-70"><FeatherIcon className="icon mr-1" icon="instagram" />{" "} Join Us In Instagram</Link>

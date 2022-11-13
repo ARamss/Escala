@@ -3,7 +3,6 @@ import { Container, Row, Col, Form, FormGroup, Label, Input , Button} from "reac
 
 // Import Background Image
 import Background from "../../assets/images/hero-4-bg-img.png";
-import logolight from "../../assets/images/logo-dark-gradient.png";
 
 import { Link } from "react-router-dom";
 
@@ -16,8 +15,7 @@ class Section extends Component {
           <Row className="align-items-center justify-content-center">
             <Col lg="6">
               <div className="">
-                {/*<p className="text-uppercase font-weight-bold f-14 mb-4">Smart candidates</p>*/}
-                <img src={logolight} alt="" className="" style={{ width: 155, marginBottom: 15 }} />
+                <p className="text-uppercase font-weight-bold f-14 mb-4" style={{color:'#828282'}}>Link in bio resume & mass job applying</p>
                 <h1 className="hero-4-title mb-4 line-height-1_4" style={{ color: "#fff"}}>La plataforma profesional, hecha para ti.</h1>
                 <p className="text-muted mb-4 pb-3">Tu CV digital y aplica de forma instantanea a cientos de vacantes disponibles para ti. Agrega tus datos, aplica y mira como te llegan ofertas al instante.</p>
                 <Link to="#" className="btn btn-primary">¿Cómo funciona?</Link>

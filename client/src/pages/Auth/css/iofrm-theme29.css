@@ -35,7 +35,7 @@ body {
 }
 
 .website-logo .logo {
-    background-image: url("../images/logo-light.svg");
+    background-image: url("../../../assets/images/logo-dark-gradient.png");
 }
 
 .website-logo .logo img {
@@ -47,7 +47,7 @@ body {
 }
 
 .website-logo-inside .logo {
-    background-image: url("../images/logo-light.svg");
+    background-image: url("../../../assets/images/logo-dark-gradient.png");
 }
 
 .website-logo-inside .logo img {
@@ -56,7 +56,7 @@ body {
 
 .img-holder {
     width: 550px;
-    background-color: #152733;
+    background-color: #020305;
 }
 
 .img-holder .info-holder h3 {
@@ -461,8 +461,8 @@ body {
 
 .form-body.without-side .form-content .form-items {
     padding: 35px 30px;
-    background-color: #0f202c;
-}
+    background-color: #1c1e20;
+}+
 
 .form-body.without-side .form-content .form-items .other-links .text {
     color: #7b909e;
@@ -533,10 +533,10 @@ body {
     }
 
     .website-logo .logo {
-        background-image: url("../images/logo-dark.svg");
+        background-image: url("../../../assets/images/logo-dark-gradient.png");
     }
 
     .form-body.without-side .website-logo .logo {
-        background-image: url("../images/logo-light.svg");
+        background-image: url("../../../assets/images/logo-dark-gradient.png");
     }
 }

@@ -7,9 +7,9 @@ import {
   NavBtn,
   NavBtnLink
 } from './NavbarElements';
-import logolight from "../../assets/images/logo-dark-gradient.png";
+import logolight from "../../assets/images/logo-light-gradient.png";
 
-const Navbar = () => {
+const NavbarAdmin = () => {
   return (
     <>
       <Nav>
@@ -18,15 +18,24 @@ const Navbar = () => {
         </NavLink>
         <Bars />
         <NavMenu>
+          <NavLink to='/about' activeStyle>
+             Editar
+          </NavLink>
+          <NavLink to='/contact-us' activeStyle>
+            Configurar
+          </NavLink>
+          <NavLink to='/contact-us' activeStyle>
+            Aplicar
+          </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/entrar'>Entrar</NavBtnLink>
+          <NavBtnLink to='/login'>Salir</NavBtnLink>
         </NavBtn>
       </Nav>
     </>
   );
 };
 
-export default Navbar;
+export default NavbarAdmin;
