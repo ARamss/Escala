@@ -42,7 +42,8 @@ const ResumeSchema = new Schema({
   ],
   socials: [
     {
-      url: Number
+      Title: String,
+      url: String
     },
   ]
 

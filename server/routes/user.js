@@ -2,12 +2,13 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const mongoose = require('mongoose');
 const requireLogin = require('../middleware/requireLogin')
 // const multer = require('multer');
 // require('dotenv').config();
 
 // User Model
-const User = require('../models/user');
+const User = mongoose.model("User")
 
 // @route GET /users
 // @desc Get all users

@@ -8,6 +8,8 @@ import "./assets/scss/themes.scss";
 import Landing from "./pages/Landing/Landing";
 import Resume from "./pages/Resume/pages/Resume";
 import Admin from "./pages/Admin/Admin";
+import Config from "./pages/Admin/Config";
+import Apply from "./pages/Admin/Apply";
 import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
 import {
@@ -24,17 +26,17 @@ export const UserContext = createContext()
 
 const Routing =()=>{
   //user auth logic
-  const history = useHistory()
-  const {state,dispatch} = useContext(UserContext)
-  useEffect(()=>{
-    const user = JSON.parse(localStorage.getItem("user"))
-    if(user){
-      dispatch({type:"USER",payload:user})
-    }
-    else{
-      history.push('/')
-    }
-  },[])
+  // const history = useHistory()
+  // const {state,dispatch} = useContext(UserContext)
+  // useEffect(()=>{
+  //   const user = JSON.parse(localStorage.getItem("user"))
+  //   if(user){
+  //     dispatch({type:"USER",payload:user})
+  //   }
+  //   else{
+  //     history.push('/')
+  //   }
+  // },[])
 
   return (
     <Switch>
@@ -52,6 +54,12 @@ const Routing =()=>{
         </Route>
         <Route exact path="/admin">
            <Admin/>
+        </Route>
+        <Route exact path="/config">
+           <Config/>
+        </Route>
+        <Route exact path="/apply">
+           <Apply/>
         </Route>
     </Switch>
   )

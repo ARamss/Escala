@@ -3,7 +3,7 @@ import React, { Component, Suspense } from "react";
 const Footer = React.lazy(() => import("../../component/Footer/Footer"));
 const NavbarAdmin = React.lazy(() => import("../../component/NavbarAdmin/NavbarAdmin"));
 
-class Admin extends Component {
+class Apply extends Component {
   //set preloader div
   PreLoader = () => {
     return (
@@ -24,11 +24,12 @@ class Admin extends Component {
       <React.Fragment>
         <Suspense fallback={this.PreLoader()}>
           <NavbarAdmin />
-          <h1>Admin</h1>
+          <h1>Apply</h1>
           <Footer />
         </Suspense>
       </React.Fragment>
     );
   }
 }
-export default Admin;
+
+export default Apply

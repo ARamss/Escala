@@ -9,7 +9,7 @@ import {
 } from './NavbarElements';
 import logolight from "../../assets/images/logo-light-gradient.png";
 
-const NavbarAdmin = () => {
+const NavbarAdmin = ({ admin, config, apply }) => {
   return (
     <>
       <Nav>
@@ -18,13 +18,13 @@ const NavbarAdmin = () => {
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavLink to='/about' activeStyle>
+          <NavLink to='/admin' activeStyle>
              Editar
           </NavLink>
-          <NavLink to='/contact-us' activeStyle>
+          <NavLink to='/config' activeStyle>
             Configurar
           </NavLink>
-          <NavLink to='/contact-us' activeStyle>
+          <NavLink to='/apply' activeStyle>
             Aplicar
           </NavLink>
           {/* Second Nav */}
