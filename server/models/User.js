@@ -30,6 +30,12 @@ const userSchema = new mongoose.Schema({
     unique: true,
     trim: true
   },
+  birthday:{
+    type:Date,
+    required: true,
+    unique: true,
+    trim: true
+  },
   password: {
     type: String,
     required: true,

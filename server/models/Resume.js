@@ -12,37 +12,40 @@ const ResumeSchema = new Schema({
     type: String,
     required: true
   },
+  skillContent:{
+    type:String
+  },
   skills: [
     {
-      Title: String,
-      Percent: Number
+    name: String,
+    percentage: Number
     },
   ],
   experience: [
     {
       rangeStart: String,
       rangeEnd: String,
-      Title: String,
-      Description: String
+      name: String,
+      description: String
     },
   ],
   education: [
     {
       rangeStart: String,
       rangeEnd: String,
-      Title: String,
+      Digree: String,
       Description: String
     },
   ],
   abilities: [
     {
-      Title: String,
-      Description: String
+      title: String,
+      description: String
     },
   ],
   socials: [
     {
-      Title: String,
+      title: String,
       url: String
     },
   ]
