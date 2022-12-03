@@ -1,6 +1,7 @@
 import React, { Component, Suspense } from "react";
 
 const Footer = React.lazy(() => import("../../component/Footer/Footer"));
+const Wizard = React.lazy(() => import("../../component/Wizard/Wizard"));
 const NavbarAdmin = React.lazy(() => import("../../component/NavbarAdmin/NavbarAdmin"));
 
 class Apply extends Component {
@@ -24,7 +25,7 @@ class Apply extends Component {
       <React.Fragment>
         <Suspense fallback={this.PreLoader()}>
           <NavbarAdmin />
-          <h1>Apply</h1>
+              <Wizard />
           <Footer />
         </Suspense>
       </React.Fragment>

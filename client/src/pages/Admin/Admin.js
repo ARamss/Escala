@@ -2,6 +2,7 @@ import React, { Component, Suspense } from "react";
 
 const Footer = React.lazy(() => import("../../component/Footer/Footer"));
 const NavbarAdmin = React.lazy(() => import("../../component/NavbarAdmin/NavbarAdmin"));
+const EditResume = React.lazy(() => import("../../pages/Resume/pages/EditResume"));
 
 class Admin extends Component {
   //set preloader div
@@ -24,7 +25,7 @@ class Admin extends Component {
       <React.Fragment>
         <Suspense fallback={this.PreLoader()}>
           <NavbarAdmin />
-          <h1>Admin</h1>
+              <EditResume/>
           <Footer />
         </Suspense>
       </React.Fragment>

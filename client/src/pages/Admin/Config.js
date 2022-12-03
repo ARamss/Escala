@@ -24,7 +24,7 @@ class Config extends Component {
       <React.Fragment>
         <Suspense fallback={this.PreLoader()}>
           <NavbarAdmin />
-          <h1>Config</h1>
+
           <Footer />
         </Suspense>
       </React.Fragment>

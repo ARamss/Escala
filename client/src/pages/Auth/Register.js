@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React,{useState} from "react";
 import "./css/bootstrap.min.css";
 // import "./css/fontawesome-all.min.css";
 import "./css/iofrm-style.css";
@@ -14,13 +14,13 @@ const Register = () => {
     const [slug,setSlug] = useState("")
     const [email,setEmail] = useState("")
     const [password,setPassword] = useState("")
-    const [url,setURL] = useState(undefined)
+    // const [url,setURL] = useState(undefined)
 
-    useEffect(()=>{
-       if(url){
-           uploadFields()
-       }
-    },[url])
+    // useEffect(()=>{
+    //    if(url){
+    //        uploadFields()
+    //    }
+    // },[url])
 
     const uploadFields = () => {
             //email format verification
