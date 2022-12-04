@@ -2,51 +2,48 @@ import React,{useState,useContext} from "react";
 import {useHistory} from 'react-router-dom';
 import {UserContext} from '../../App';
 import "./css/bootstrap.min.css";
-// import "./css/fontawesome-all.min.css";
+import axios from 'axios';
+import formValidation from '../../reducers/FormValidation';
+import inputErrors from '../../reducers/InputErrors';
 import "./css/iofrm-style.css";
 import "./css/iofrm-theme29.css";
 import logolight from "../../assets/images/logo-dark-gradient.png";
 import graphic from "./images/graphic3.svg";
 
 const Login = () => {
-    //eslint-disable-next-line
-    const {state,dispatch} = useContext(UserContext)
-    const history = useHistory()
-    const [password,setPassword] = useState("")
-    const [email,setEmail] = useState("")
 
-    const PostData = ()=>{
-      //eslint-disable-next-line
-       if(!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)){
-            console.log('error')
-            return
-       }
-       fetch("/auth/signin",{
-           method:"post",
-           headers:{
-               "Content-Type":"application/json"
-           },
-           body:JSON.stringify({
-               email,
-               password
-           })
-        }).then(res=>res.json())
-        .then(data=>{
-            console.log(data)
-            if(data.error){
-               console.log('error')
-            }else{
-               localStorage.setItem("jwt",data.token)
-               localStorage.setItem("user",JSON.stringify(data.user))
-               // dispatch to user reducer
-               dispatch({type:"USER",payload:data.user})
-               console.log('success')
-               history.push('/')
-            }
-        }).catch(error=>{
-               console.log(error)
-        })
+    const initialState = {
+      email: '',
+      password: ''
+    };
+
+    const [userNotFound, setUserNotFound] = useState(false);
+    const [wrongPassword, setWrongPassword] = useState(false);
+
+    const axiosFunc = () => {
+    setUserNotFound(false);
+    setWrongPassword(false);
+    axios.post(`/auth/signin`, values )
+      .then(res => {
+        // Save JWT token in localStorage
+        localStorage.setItem("jwt",res.data)
+        // localStorage.setItem("user",JSON.stringify(res.data))
+
+        // Redirect user to admin page
+        window.location = '/admin';
+      })
+      .catch(err => {
+        const error = err.response.data
+        if (error === 'Username/Email not found') {
+          setUserNotFound(true);
+        }
+        if (error === 'Invalid password') {
+          setWrongPassword(true);
+        }
+      })
     }
+
+    const {handleSubmit, handleChange, values, errors, isSubmitting} = formValidation(initialState, inputErrors, axiosFunc);
 
     return (
       <React.Fragment>
@@ -68,27 +65,28 @@ const Login = () => {
                           <div class="form-items">
                               <h3>Bienvenid@ de vuelta</h3>
                               <p>Entra a editar tu resume o a aplicar a miles de vacantes al insante.</p>
-                              <form>
+                              <form onSubmit={handleSubmit}>
                                   <input
                                       class="form-control"
                                       type="text"
                                       name="email"
-                                      placeholder="E-mail"
                                       required
-                                      value={email}
-                                      onChange={(e)=>setEmail(e.target.value)}
+                                      value={values.email}
+                                      onChange={handleChange}
+                                      placeholder={'Username or Email'}
                                       style={{color:'#fff'}}/>
                                   <input
                                       class="form-control"
                                       type="password"
-                                      name="password"
-                                      placeholder="Password"
                                       required
-                                      value={password}
-                                      onChange={(e)=>setPassword(e.target.value)}
+                                      name="password"
+                                      value={values.password}
+                                      onChange={handleChange}
+                                      placeholder={'Password'}
+                                      autoComplete="password"
                                       style={{color:'#fff'}}/>
                                   <div class="form-button">
-                                      <button id="submit" type="submit" class="btn btn-primary btn-block btn-sm" onClick={()=>PostData()}>Login</button>
+                                      <button id="submit" type="submit" disabled={isSubmitting} class="btn btn-primary btn-block btn-sm">Login</button>
                                   </div>
                               </form>
                               <div class="other-links">
