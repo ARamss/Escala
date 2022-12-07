@@ -18,7 +18,7 @@ const Wizard = ({ children }) => {
         <button
           type="button"
           onClick={goPrevPage}
-          className="wizard__buttons-left"
+          className="btn btn-primary btn-block btn-sm"
         >
           Atras
         </button>
@@ -29,7 +29,7 @@ const Wizard = ({ children }) => {
         <button
           type="button"
           onClick={goNextPage}
-          className="wizard__buttons-right"
+          className="btn btn-primary btn-block btn-sm"
         >
           Siguiente
         </button>

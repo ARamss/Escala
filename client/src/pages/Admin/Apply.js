@@ -1,27 +1,51 @@
 import React, { Component, Suspense } from "react";
-import { Form, FormGroup, Label, Input , Button} from "reactstrap";
+import { Form, FormGroup, Label, Input , Button, Col, Container, Row } from "reactstrap";
+// Import Background Image
+import Background from "../../assets/images/service-icon-bg.png";
+import Icon1 from "../../assets/images/services-icon/icon-1.png";
+import Icon2 from "../../assets/images/services-icon/icon-2.png";
+import Icon3 from "../../assets/images/services-icon/icon-3.png";
+import { Link } from "react-router-dom";
 
 const Footer = React.lazy(() => import("../../component/Footer/Footer"));
 const Wizard = React.lazy(() => import("../../component/Wizard/Wizard"));
 const NavbarAdmin = React.lazy(() => import("../../component/NavbarAdmin/NavbarAdmin"));
 
 const Page1 = () => (
-  <div>
-    <Form>
-      <FormGroup className="mb-3">
-        <Label for="exampleFormControlInput1" className="f-15">Tu Nombre Completo*</Label>
-        <Input type="text" className="form-control" id="exampleFormControlInput1" placeholder="" />
-      </FormGroup>
-      <FormGroup className="mb-3">
-        <Label for="exampleFormControlInput2" className="f-15">Correo*</Label>
-        <Input type="email" className="form-control" id="exampleFormControlInput2" placeholder="" />
-      </FormGroup>
-      <FormGroup className="mb-4">
-        <Label for="exampleFormControlInput3" className="f-15">Número de teléfono*</Label>
-        <Input type="password" className="form-control" id="exampleFormControlInput3" placeholder="" />
-      </FormGroup>
-    </Form>
-  </div>
+  <Container>
+    <Row className="align-items-center justify-content-center">
+      <Col lg="6">
+        <div className="">
+          <p className="text-uppercase font-weight-bold f-14 mb-4" style={{color:'#828282'}}>Link in bio resume & mass job applying</p>
+          <h1 className="hero-4-title mb-4 line-height-1_4" style={{ color: "#000"}}>La plataforma profesional, hecha para ti.</h1>
+          <p className="text-muted mb-4 pb-3">Tu CV digital y aplica de forma instantanea a cientos de vacantes disponibles para ti. Agrega tus datos, aplica y mira como te llegan ofertas al instante.</p>
+        </div>
+      </Col>
+      <Col lg={4} className="offset-lg-2 col-md-8">
+        <div className="hero-login-form mx-auto bg-white shadow p-4 rounded mt-5 mt-lg-0">
+          <div className="text-center">
+          <p className="text-muted mb-2 f-13 text-uppercase">Bienvenid@ a escala</p>
+          <h5 className="form-title mb-4">Aplica hoy.</h5>
+          </div>
+          <Form>
+            <FormGroup className="mb-3">
+              <Label for="exampleFormControlInput1" className="f-15">Tu Nombre Completo*</Label>
+              <Input type="text" className="form-control" id="exampleFormControlInput1" placeholder="" />
+            </FormGroup>
+            <FormGroup className="mb-3">
+              <Label for="exampleFormControlInput2" className="f-15">Correo*</Label>
+              <Input type="email" className="form-control" id="exampleFormControlInput2" placeholder="" />
+            </FormGroup>
+            <FormGroup className="mb-4">
+              <Label for="exampleFormControlInput3" className="f-15">Número de teléfono*</Label>
+              <Input type="password" className="form-control" id="exampleFormControlInput3" placeholder="" />
+            </FormGroup>
+            <Button type="submit" color="primary" className="btn btn-primary btn-block btn-sm">Empieza hoy.<span className="ml-2 right-icon">&#8594;</span><i className="mdi mdi-telegram ml-2"></i></Button>
+          </Form>
+        </div>
+      </Col>
+    </Row>
+  </Container>
 );
 
 const Page2 = () => (
