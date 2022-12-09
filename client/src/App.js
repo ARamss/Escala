@@ -25,7 +25,9 @@ const App =()=>{
   return (
     <Router>
       <Switch>
-          <Route exact path="/"/>
+          <Route exact path="/">
+              <Landing/>
+          </Route>
           <Route path="/entrar" component={Login}/>
           <Route path="/registro" component={Register}/>
           <Route path="/resume">
