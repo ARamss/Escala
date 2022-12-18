@@ -5,8 +5,6 @@ const Section = React.lazy(() => import("./Section"));
 const About = React.lazy(() => import("../../component/Landing/About"));
 const Services = React.lazy(() => import("../../component/Landing/Services"));
 const Feature = React.lazy(() => import("../../component/Landing/Feature"));
-const Project = React.lazy(() => import("../../component/Landing/Project"));
-const Clients = React.lazy(() => import("../../component/Landing/Clients"));
 const Contact = React.lazy(() => import("../../component/Landing/Contact"));
 const Footer = React.lazy(() => import("../../component/Footer/Footer"));
 const Navbar = React.lazy(() => import("../../component/Navbar/Navbar"));
@@ -82,12 +80,6 @@ class Landing extends Component {
 
           {/* Importing Feature */}
           <Feature />
-
-          {/* Importing Project */}
-          <Project />
-
-          {/* Importing Client */}
-          <Clients />
 
           {/* Importing Contact Us */}
           <Contact />

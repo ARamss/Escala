@@ -9,7 +9,7 @@ import {
 } from './NavbarElements';
 import logolight from "../../assets/images/logo-light-gradient.png";
 
-const NavbarAdmin = ({ admin, config, apply }) => {
+const NavbarAdmin = () => {
   return (
     <>
       <Nav>

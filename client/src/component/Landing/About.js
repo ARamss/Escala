@@ -26,11 +26,11 @@ export default class About extends Component {
             <Row>
               <Col lg={4}>
                 <h2 className="font-weight-normal line-height-1_4 mb-4">Creado y Diseñado Para <span className="font-weight-medium">Profesionales</span></h2>
-                <p className="text-muted mb-4">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil atque corrupti molestiae.</p>
-                <p className="f-17 text-muted"><FeatherIcon className="icon-xs text-primary icon-fill-primary icon mr-2" icon="grid" /> Marketing program activities</p>
-                <p className="f-17 text-muted"><FeatherIcon className="icon-xs text-primary icon-fill-primary icon mr-2" icon="layout" /> Customization product</p>
-                <p className="f-17 text-muted mb-4"><FeatherIcon className="icon-xs text-primary icon-fill-primary icon mr-2" icon="monitor" /> At vero eos accusamus iusto</p>
-                <Link to="#" className="read-more f-18">More Information <span className="ml-2 right-icon f-24">&#8594;</span></Link>
+                <p className="text-muted mb-4">Aplicamos por ti a cientos de vacantes al instante para aumentar tus probabilidades de encontrar trabajo.</p>
+                <p className="f-17 text-muted"><FeatherIcon className="icon-xs text-primary icon-fill-primary icon mr-2" icon="layout" /> Formulario úncio y sencillo</p>
+                <p className="f-17 text-muted"><FeatherIcon className="icon-xs text-primary icon-fill-primary icon mr-2" icon="cpu" /> Aplicación automatizada y personalizada</p>
+                <p className="f-17 text-muted mb-4"><FeatherIcon className="icon-xs text-primary icon-fill-primary icon mr-2" icon="briefcase" /> Recibe ofertas relevantes</p>
+                <Link to="/apply" className="read-more f-18">Aplicar hoy <span className="ml-2 right-icon f-24">&#8594;</span></Link>
               </Col>
               <Col lg={4}>
                 <div className="card border-0">

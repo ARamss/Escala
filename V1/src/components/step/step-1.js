@@ -9,21 +9,16 @@ class StepOne extends React.Component {
                     <div className="inner pb-100 clearfix">
                         <div className="form-content pera-content">
                             <div className="step-inner-content">
-                                <span className="step-no">Step 1</span>
-                                <h2>What kind of Services You need?</h2>
-                                <p>
-                                    Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas
-                                    concludaturque usu, facete detracto patrioque an per, lucilius
-                                    pertinacia eu vel.
-                                </p>
+                                <span className="step-no">Paso 1</span>
+                                <h2>¿Qué tipo de trabajo buscas?</h2>
                                 <div className="step-box">
                                     <div className="row">
                                         <div className="col-md-4">
                                             <label className="step-box-content bg-white text-center relative-position active">
                                                 <span className="step-box-icon">
-                                                    <img src={require("../assets/img/d1.png")} alt="" />
+                                                    <img src={require("../../assets/img/d1.png")} alt="" />
                                                 </span>
-                                                <span className="step-box-text">Corporate Services</span>
+                                                <span className="step-box-text">De Todo</span>
                                                 <span className="service-check-option">
                                                     <span>
                                                         <input
@@ -39,9 +34,9 @@ class StepOne extends React.Component {
                                         <div className="col-md-4">
                                             <label className="step-box-content bg-white text-center relative-position">
                                                 <span className="step-box-icon">
-                                                    <img src={require("../assets/img/d2.png")} alt="" />
+                                                    <img src={require("../../assets/img/d2.png")} alt="" />
                                                 </span>
-                                                <span className="step-box-text">Freelancing Serivces</span>
+                                                <span className="step-box-text">Tiempo Completo</span>
                                                 <span className="service-check-option">
                                                     <span>
                                                         <input
@@ -56,9 +51,9 @@ class StepOne extends React.Component {
                                         <div className="col-md-4">
                                             <label className="step-box-content bg-white text-center relative-position">
                                                 <span className="step-box-icon">
-                                                    <img src={require("../assets/img/d3.png")} alt="" />
+                                                    <img src={require("../../assets/img/d3.png")} alt="" />
                                                 </span>
-                                                <span className="step-box-text">Development</span>
+                                                <span className="step-box-text">Internship</span>
                                                 <span className="service-check-option">
                                                     <span>
                                                         <input

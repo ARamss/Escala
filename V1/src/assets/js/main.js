@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 $(function() {
 
     // Select Dropdown
@@ -109,7 +107,7 @@ $(function() {
         //remove active state from all the state
         removeClasses(DOMstrings.stepsBtns, 'js-active');
         removeClasses(DOMstrings.stepsBtns, 'current');
-
+        
         //set picked items to active
         DOMstrings.stepsBtns.forEach((elem, index) => {
             if (index <= activeStepNum) {
@@ -225,7 +223,7 @@ $(function() {
 
         let activePanelNum = Array.from(DOMstrings.stepFormPanels).indexOf(activePanel);
 
-
+        
         //set active step and active panel onclick
         if (eventTarget.classList.contains(`${DOMstrings.stepPrevBtnClass}`) ) {
             activePanelNum--;
@@ -233,7 +231,7 @@ $(function() {
             setActiveStep(activePanelNum);
             setActivePanel(activePanelNum);
 
-        } else if(eventTarget.classList.contains(`${DOMstrings.stepNextBtnClass}`)  ) {
+        } else if(eventTarget.classList.contains(`${DOMstrings.stepNextBtnClass}`)  ) { 
 
          var form = $('#wizard');
          form.validate();
@@ -241,13 +239,13 @@ $(function() {
 
          var parent_fieldset = $('.multisteps-form__panel.js-active');
          var next_step = true;
-
+         
          parent_fieldset.find('.required').each( function(){
             next_step = false;
             var form = $('.required');
             form.validate();
             $(this).addClass('custom-select is-invalid');
-        });
+        }); 
 
          if(next_step === true || form.valid() === true) {
             $("html, body").animate({
@@ -259,8 +257,8 @@ $(function() {
         }
 
 
-    }
-
+    } 
+    
 
 });
 

@@ -17,7 +17,7 @@ class Section extends Component {
               <div className="">
                 <p className="text-uppercase font-weight-bold f-14 mb-4" style={{color:'#828282'}}>Link in bio resume & mass job applying</p>
                 <h1 className="hero-4-title mb-4 line-height-1_4" style={{ color: "#fff"}}>La plataforma profesional, hecha para ti.</h1>
-                <p className="text-muted mb-4 pb-3">Tu CV digital y aplica de forma instantanea a cientos de vacantes disponibles para ti. Agrega tus datos, aplica y mira como te llegan ofertas al instante.</p>
+                <p className="text-muted mb-4 pb-3">Aplica de forma instantanea a cientos de vacantes disponibles para ti. Agrega tus datos, aplica y mira como te llegan ofertas al instante.</p>
                 <Link to="#" className="btn btn-primary">¿Cómo funciona?</Link>
               </div>
             </Col>

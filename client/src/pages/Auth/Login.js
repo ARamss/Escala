@@ -1,6 +1,4 @@
-import React,{useState,useContext} from "react";
-import {useHistory} from 'react-router-dom';
-import {UserContext} from '../../App';
+import React from "react";
 import "./css/bootstrap.min.css";
 import axios from 'axios';
 import formValidation from '../../reducers/FormValidation';
@@ -17,12 +15,12 @@ const Login = () => {
       password: ''
     };
 
-    const [userNotFound, setUserNotFound] = useState(false);
-    const [wrongPassword, setWrongPassword] = useState(false);
+    // const [userNotFound, setUserNotFound] = useState(false);
+    // const [wrongPassword, setWrongPassword] = useState(false);
 
     const axiosFunc = () => {
-    setUserNotFound(false);
-    setWrongPassword(false);
+    // setUserNotFound(false);
+    // setWrongPassword(false);
     axios.post(`/auth/signin`, values )
       .then(res => {
         // Save JWT token in localStorage
@@ -35,15 +33,17 @@ const Login = () => {
       .catch(err => {
         const error = err.response.data
         if (error === 'Username/Email not found') {
-          setUserNotFound(true);
+          // setUserNotFound(true);
+          console.log('Username not found')
         }
         if (error === 'Invalid password') {
-          setWrongPassword(true);
+          // setWrongPassword(true);
+          console.log('Wrong Password')
         }
       })
     }
 
-    const {handleSubmit, handleChange, values, errors, isSubmitting} = formValidation(initialState, inputErrors, axiosFunc);
+    const {handleSubmit, handleChange, values, isSubmitting} = formValidation(initialState, inputErrors, axiosFunc);
 
     return (
       <React.Fragment>
