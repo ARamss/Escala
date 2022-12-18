@@ -22,7 +22,7 @@ const Navbar = () => {
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='http://localhost:8080/'>Applicar</NavBtnLink>
+          <NavBtnLink to='/entrar'>Applicar</NavBtnLink>
         </NavBtn>
       </Nav>
     </>
