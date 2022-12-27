@@ -23,7 +23,7 @@ class StepFour extends React.Component {
                                     <div className="date-picker date datepicker">
                                         <input type="text" name="date" className="form-control" />
                                             <div className="input-group-append"><span>ADD TIME</span></div>
-										</div>
+										                 </div>
                                         <div className="plan-area">
                                             <div className="plan-icon-text text-center active">
                                                 <div className="plan-icon">

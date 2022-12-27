@@ -33,6 +33,19 @@ class StepTwo extends React.Component {
                                         <textarea name="full_comments" placeholder="Write here"></textarea>
                                     </div>
 
+                                    <h2>Ingresa tus credenciales</h2>
+                                    <p>Para aplicar por ti, necesitamos acceder a tus cuentas, no te preocupes, tu informacion está encriptada y asegurada.</p>
+                                    <div className="form-inner-area">
+                                        <img src={require("../../assets/img/occmundial.png")} style={{width:95, marginBottom:15}} alt="" />
+                                        <input type="email" name="email" className="form-control required" placeholder="Email Address *" required />
+                                        <input type="password" name="password" className="form-control required" placeholder="Password *" />
+                                    </div>
+                                    <div className="form-inner-area">
+                                        <img src={require("../../assets/img/indeed.png")} style={{width:95, marginBottom:15}} alt="" />
+                                        <input type="email" name="email" className="form-control required" placeholder="Email Address *" required />
+                                        <input type="password" name="password" className="form-control required" placeholder="Password *" />
+                                    </div>
+
                                     <div className="upload-documents">
                                         <h3>Sube tu CV o resume:</h3>
                                         <div className="upload-araa bg-white">
