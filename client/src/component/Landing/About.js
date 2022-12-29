@@ -38,10 +38,10 @@ export default class About extends Component {
                   <img src={Img1} alt="" className="img-fluid d-block mx-auto" />
                   </div>
                   <div className="mt-3">
-                    <p className="text-uppercase text-muted mb-2 f-13">Development</p>
-                    <h4 className="f-18">Product Development</h4>
-                    <p className="text-muted">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni.</p>
-                    <Link to="#" className="read-more">Read More <span className="ml-2 right-icon">&#8594;</span></Link>
+                    <p className="text-uppercase text-muted mb-2 f-13">AUTOMATIZACIÓN</p>
+                    <h4 className="f-18">Aplicación Automatizada</h4>
+                    <p className="text-muted">Aplicamos por ti de forma inteligente a cientos o miles de vacantes para aumentar tus probabilidades de encontrar un trabajo relevante a ti.</p>
+
                   </div>
                 </div>
               </Col>
@@ -51,10 +51,10 @@ export default class About extends Component {
                     <img src={Img2} alt="" className="img-fluid d-block mx-auto" />
                   </div>
                   <div className="mt-3">
-                    <p className="text-uppercase text-muted mb-2 f-13">Marketing</p>
-                    <h4 className="f-18">Marketing Product</h4>
-                    <p className="text-muted">Temporibus autem quibusdam a officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.</p>
-                    <Link to="#" className="read-more">Read More <span className="ml-2 right-icon">&#8594;</span></Link>
+                    <p className="text-uppercase text-muted mb-2 f-13">Link in bio</p>
+                    <h4 className="f-18">Tu @Link in Bio Profesional</h4>
+                    <p className="text-muted">Genera y eneseña tu portafolio profesional, en un solo link</p>
+                    <Link to="#" className="read-more">Próximamente</Link>
                   </div>
                 </div>
               </Col>

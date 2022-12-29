@@ -18,8 +18,8 @@ export default class Contact extends Component {
             <Row className="justify-content-center">
               <Col lg={7}>
                 <div className="text-center mb-5">
-                  <h2 className="">Contact Us</h2>
-                  <p className="text-muted">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi commodi consequatur.</p>
+                  <h2 className="">Contáctanos</h2>
+                  <p className="text-muted">Para cualquier informe, duda  comentario contactanos en la forma de abajo.</p>
                 </div>
               </Col>
             </Row>
@@ -28,10 +28,10 @@ export default class Contact extends Component {
                 <div className="mb-5 mb-lg-0">
                   <div className="text-center">
                     <img src={ContactImg} alt="" className="img-fluid d-block w-75 mx-auto" />
-                    <h4 className="mt-4">Are You Facing Any Problem..?</h4>
-                    <p className="text-muted mb-4">It va esser tam simplic quam Occidental in fact it va esser Occidental angles quam un skeptic cambridge es.</p>
-                    <Link to="#" className="btn btn-success"><FeatherIcon className="icon mr-2 icon-fill-white" icon="message-circle" /> Start Live Chat</Link>
-                    <p className="mt-4">Or you can contact at</p>
+                    <h4 className="mt-4">¿Quieres platicar con nosotros?</h4>
+                    <p className="text-muted mb-4">Agenda una cita y estaremos contigo a la brevedad.</p>
+                    <Link to="#" className="btn btn-success"><FeatherIcon className="icon mr-2 icon-fill-white" icon="calendar" />Agenda Una Cita</Link>
+                    <p className="mt-4">O contáctanos a:</p>
                     <Row>
                       <Col md={6}>
                         <Link to="#">
@@ -48,7 +48,7 @@ export default class Contact extends Component {
                 </div>
               </Col>
               <Col lg={5} className="offset-lg-1">
-                <h4 className="line-height-1_4 mb-4">Get in Touch</h4>
+                <h4 className="line-height-1_4 mb-4">¿Quiéres formar parte? Dejanos tus datos</h4>
                 <div className="custom-form mt-4 mt-lg-0">
                   <div id="message"></div>
                   <Form method="post" name="contact-form" id="contact-form">
@@ -80,7 +80,7 @@ export default class Contact extends Component {
                     </Row>
                     <Row>
                       <Col lg={12}>
-                        <Button color="primary" id="submit" name="send" className="btn btn-primary">Send Message</Button>
+                        <Button color="primary" id="submit" name="send" className="btn btn-primary"><FeatherIcon className="icon mr-2 icon-fill-white" icon="send" />Enviar</Button>
                         <div id="simple-msg"></div>
                       </Col>
                     </Row>

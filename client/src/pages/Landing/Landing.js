@@ -4,7 +4,7 @@ import React, { Component, Suspense } from "react";
 const Section = React.lazy(() => import("./Section"));
 const About = React.lazy(() => import("../../component/Landing/About"));
 const Services = React.lazy(() => import("../../component/Landing/Services"));
-const Feature = React.lazy(() => import("../../component/Landing/Feature"));
+// const Feature = React.lazy(() => import("../../component/Landing/Feature"));
 const Contact = React.lazy(() => import("../../component/Landing/Contact"));
 const Footer = React.lazy(() => import("../../component/Footer/Footer"));
 const Navbar = React.lazy(() => import("../../component/Navbar/Navbar"));
@@ -79,7 +79,7 @@ class Landing extends Component {
            <Services />
 
           {/* Importing Feature */}
-          <Feature />
+          {/*<Feature />*/}
 
           {/* Importing Contact Us */}
           <Contact />

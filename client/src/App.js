@@ -13,11 +13,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
 const App =()=>{
-
-  // const isAuth = {
-  //   token: "Bearer "+localStorage.getItem("jwt")
-  // }
-
   return (
     <Router>
       <Switch>
