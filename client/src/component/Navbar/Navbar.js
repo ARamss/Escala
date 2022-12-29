@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Nav,
   NavLink,
-  Bars,
   NavMenu,
   NavBtn,
   NavBtnLink
@@ -16,7 +15,6 @@ const Navbar = () => {
         <NavLink to='/'>
           <img src={logolight} style={{ width: 135 }} alt='logo' />
         </NavLink>
-        <Bars />
         <NavMenu>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
