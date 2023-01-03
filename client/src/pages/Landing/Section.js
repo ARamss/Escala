@@ -24,21 +24,29 @@ class Section extends Component {
             <Col lg={4} className="offset-lg-2 col-md-8">
               <div className="hero-login-form mx-auto bg-white shadow p-4 rounded mt-5 mt-lg-0">
                 <div className="text-center">
-                <p className="text-muted mb-2 f-13 text-uppercase">V0.1.0 ALPHA CERRADA</p>
+                <p className="text-muted mb-2 f-13 text-uppercase">V.ALPHA.0.1.0</p>
                 <h5 className="form-title mb-4">Registrate hoy.</h5>
                 </div>
                 <Form>
                   <FormGroup className="mb-3">
-                    <Label for="exampleFormControlInput1" className="f-15">Tu Nombre Completo*</Label>
+                    <Label for="exampleFormControlInput1" className="f-15">Nombre*</Label>
                     <Input type="text" className="form-control" id="exampleFormControlInput1" placeholder="" />
                   </FormGroup>
                   <FormGroup className="mb-3">
+                    <Label for="exampleFormControlInput1" className="f-15">Apellido*</Label>
+                    <Input type="text" className="form-control" id="exampleFormControlInput2" placeholder="" />
+                  </FormGroup>
+                  <FormGroup className="mb-3">
                     <Label for="exampleFormControlInput2" className="f-15">Correo*</Label>
-                    <Input type="email" className="form-control" id="exampleFormControlInput2" placeholder="" />
+                    <Input type="email" className="form-control" id="exampleFormControlInput3" placeholder="" />
                   </FormGroup>
                   <FormGroup className="mb-4">
                     <Label for="exampleFormControlInput3" className="f-15">Número de teléfono*</Label>
-                    <Input type="password" className="form-control" id="exampleFormControlInput3" placeholder="" />
+                    <Input type="text" className="form-control" id="exampleFormControlInput4" placeholder="" />
+                  </FormGroup>
+                  <FormGroup className="mb-3">
+                    <Label for="exampleFormControlInput2" className="f-15">Contraseña*</Label>
+                    <Input type="password" className="form-control" id="exampleFormControlInput5" placeholder="" />
                   </FormGroup>
                   <Button type="submit" color="primary" className="btn btn-primary btn-block btn-sm">Registrarme<span className="ml-2 right-icon">&#8594;</span><i className="mdi mdi-telegram ml-2"></i></Button>
                 </Form>

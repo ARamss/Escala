@@ -31,7 +31,7 @@ export default class Contact extends Component {
                     <h4 className="mt-4">¿Quieres platicar con nosotros?</h4>
                     <p className="text-muted mb-4">Agenda una cita y estaremos contigo a la brevedad.</p>
                     <Link to="#" className="btn btn-success"><FeatherIcon className="icon mr-2 icon-fill-white" icon="calendar" />Agenda Una Cita</Link>
-                    <p className="mt-4">O contáctanos a:</p>
+                    {/*<p className="mt-4">O contáctanos a:</p>
                     <Row>
                       <Col md={6}>
                         <Link to="#">
@@ -43,7 +43,7 @@ export default class Contact extends Component {
                           <div className="badge f-14 bg-soft-dark text-muted"><span className="text-dark mr-1">Phone:</span> (001) 1234 567 890</div>
                         </Link>
                       </Col>
-                    </Row>
+                    </Row>*/}
                   </div>
                 </div>
               </Col>
@@ -55,26 +55,26 @@ export default class Contact extends Component {
                     <Row>
                       <Col md={6}>
                         <FormGroup className="app-label">
-                          <Label for="name" className="text-muted">First Name</Label>
-                          <Input name="name" id="name" type="text" className="form-control" placeholder="Enter. . ." />
+                          <Label for="name" className="text-muted">Nombre</Label>
+                          <Input name="name" id="name" type="text" className="form-control" placeholder="" />
                         </FormGroup>
                       </Col>
                       <Col md={6}>
                         <FormGroup className="app-label">
-                          <Label for="lastname" className="text-muted">Last Name</Label>
-                          <Input name="lastname" id="lastname" type="text" className="form-control" placeholder="Enter. . ." />
+                          <Label for="lastname" className="text-muted">Apellido</Label>
+                          <Input name="lastname" id="lastname" type="text" className="form-control" placeholder="" />
                         </FormGroup>
                       </Col>
                       <Col md={12}>
                         <FormGroup className="app-label">
-                          <Label for="email" className="text-muted">Your Email</Label>
-                          <Input name="email" id="email" type="email" className="form-control" placeholder="Email. . ." />
+                          <Label for="email" className="text-muted">Correo</Label>
+                          <Input name="email" id="email" type="email" className="form-control" placeholder="" />
                         </FormGroup>
                       </Col>
                       <Col md={12}>
                         <FormGroup className="app-label">
-                          <Label for="comments" className="text-muted">Type Massage</Label>
-                          <Input name="comments" id="comments" type="textarea" rows="4" className="form-control" placeholder="Message. . ." />
+                        <Label for="phone" className="text-muted">Número de teléfono</Label>
+                        <Input name="phone" id="phone" type="phone" className="form-control" placeholder="" />
                         </FormGroup>
                       </Col>
                     </Row>
