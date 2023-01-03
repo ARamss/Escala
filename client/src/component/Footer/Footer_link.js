@@ -10,7 +10,7 @@ class Footer_link extends Component {
             <div className="text-center mt-5">
                 <p className="text-white-50 f-15 mb-0">
                     {(new Date().getFullYear())}{" "}
-                     © Escala 2023. Made by Rams
+                     © Escala. Made by Rams
                 </p>
             </div>
         </Col>
