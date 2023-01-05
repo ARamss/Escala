@@ -19,7 +19,7 @@ export default class Contact extends Component {
               <Col lg={7}>
                 <div className="text-center mb-5">
                   <h2 className="">Contáctanos</h2>
-                  <p className="text-muted">Para cualquier informe, duda  comentario contactanos en la forma de abajo.</p>
+                  <p className="text-muted">Para cualquier informe, duda o comentario, contáctanos en la forma de abajo.</p>
                 </div>
               </Col>
             </Row>
@@ -48,7 +48,7 @@ export default class Contact extends Component {
                 </div>
               </Col>
               <Col lg={5} className="offset-lg-1">
-                <h4 className="line-height-1_4 mb-4">¿Quiéres formar parte? Dejanos tus datos</h4>
+                <h4 className="line-height-1_4 mb-4">¿Quieres formar parte? Dejanos tus datos.</h4>
                 <div className="custom-form mt-4 mt-lg-0">
                   <div id="message"></div>
                   <Form method="post" name="contact-form" id="contact-form">

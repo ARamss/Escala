@@ -1,6 +1,6 @@
-// 
+//
 // Hero
-// 
+//
 
 @mixin hero-overlay {
     position: absolute;
@@ -45,7 +45,7 @@
 
 // Hero 4
 .hero-4-bg {
-    padding: 220px 0 180px;
+    padding: 120px 0 180px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@
 
 // Responsive
 
-@media (min-width: 200px) and (max-width: 768px) { 
+@media (min-width: 200px) and (max-width: 768px) {
     .hero-1-bg {
         padding: 120px 0 60px;
     }
@@ -104,7 +104,7 @@
     }
 }
 
-@media (min-width: 200px) and (max-width: 576px) { 
+@media (min-width: 200px) and (max-width: 576px) {
     .hero-1-title, .hero-2-title {
         font-size: 36px !important;
     }
@@ -118,4 +118,3 @@
         font-size: 32px !important;
     }
 }
-

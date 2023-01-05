@@ -31,7 +31,7 @@ export default class Services extends Component {
                     </div>
                   </div>
                   <h4 className="service-title mt-4 mb-3 f-18">Inteligente</h4>
-                  <p className="service-subtitle mb-4 f-15">Constantemente inovamos para ti, creamos soluciones a la medida para explotar tu potecial en todas tus metas profesionales.</p>
+                  <p className="service-subtitle mb-4 f-15">Constantemente innovamos para ti, creamos soluciones a la medida para explotar tu potecial en todas tus metas profesionales.</p>
                   {/*<Link to="#" className="read-more">More<span className="right-icon ml-2">&#8594;</span></Link>*/}
                 </div>
               </Col>
@@ -43,7 +43,7 @@ export default class Services extends Component {
                     </div>
                   </div>
                   <h4 className="service-title mt-4 mb-3 f-18">Organizada</h4>
-                  <p className="service-subtitle mb-4 f-15">Entendemos lo que es relevante para ti. Por eso automatizamos y personalizamos nuestro servicio a nuestros usurios a lo que es relevante a su rama profesional.</p>
+                  <p className="service-subtitle mb-4 f-15">Entendemos lo que es relevante para ti, por eso, automatizamos y personalizamos nuestro servicio a nuestros usurios a lo que es relevante dentro de su rama profesional.</p>
                 </div>
               </Col>
               <Col lg={4}>

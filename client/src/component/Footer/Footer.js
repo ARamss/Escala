@@ -13,45 +13,45 @@ import logolight from "../../assets/images/logo-light.png";
 import FeatherIcon from "feather-icons-react";
 
 class Footer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      links: [
-        {
-          id: 1,
-          title: "Customer",
-          child: [
-            { title: "Works", link: "/" },
-            { title: "Strategy", link: "/" },
-            { title: "Releases", link: "/" },
-            { title: "Press", link: "/" },
-            { title: "Mission", link: "/" },
-          ],
-        },
-        {
-          id: 2,
-          title: "Product",
-          child: [
-            { title: "Tranding", link: "/" },
-            { title: "Popular", link: "/" },
-            { title: "Customers", link: "/" },
-            { title: "Features", link: "/" },
-          ],
-        },
-        {
-          id: 3,
-          title: "Learn More",
-          child: [
-            { title: "Developers", link: "/" },
-            { title: "Support", link: "/" },
-            { title: "Customer Service", link: "/" },
-            { title: "Get Started", link: "/" },
-            { title: "Guide", link: "/" },
-          ],
-        },
-      ],
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     links: [
+  //       {
+  //         id: 1,
+  //         title: "Customer",
+  //         child: [
+  //           { title: "Works", link: "/" },
+  //           { title: "Strategy", link: "/" },
+  //           { title: "Releases", link: "/" },
+  //           { title: "Press", link: "/" },
+  //           { title: "Mission", link: "/" },
+  //         ],
+  //       },
+  //       {
+  //         id: 2,
+  //         title: "Product",
+  //         child: [
+  //           { title: "Tranding", link: "/" },
+  //           { title: "Popular", link: "/" },
+  //           { title: "Customers", link: "/" },
+  //           { title: "Features", link: "/" },
+  //         ],
+  //       },
+  //       {
+  //         id: 3,
+  //         title: "Learn More",
+  //         child: [
+  //           { title: "Developers", link: "/" },
+  //           { title: "Support", link: "/" },
+  //           { title: "Customer Service", link: "/" },
+  //           { title: "Get Started", link: "/" },
+  //           { title: "Guide", link: "/" },
+  //         ],
+  //       },
+  //     ],
+  //   };
+  // }
 
   render() {
     return (
@@ -68,13 +68,13 @@ class Footer extends Component {
                   <Link to="#">
                     <img src={logolight} alt="" className="" height="35" style={{ width: 135 }} />
                   </Link>
-                  <p className="text-white-50 my-4">Cras ultricies mi eu turpis sit hendrerit fringilla vestibulum ante ipsum primis in faucibus ultrices posuere cubilia.</p>
+                  <p className="text-white-50 my-4">La plataforma profesional, hecha para ti.</p>
                   <Link to="#" className="text-white-70"><FeatherIcon className="icon mr-1" icon="instagram" />{" "} Join Us In Instagram</Link>
                 </div>
               </Col>
-              <Col lg={7} className="offset-lg-1">
+              {/*<Col lg={7} className="offset-lg-1">
                 <Row>
-                  {/* Render Footer Link */}
+
                   {this.state.links.map((item, key) => (
                     <Col md={4} key={key}>
                     <h4 className="text-white f-22 font-weight-normal mb-3">
@@ -92,7 +92,7 @@ class Footer extends Component {
                     </Col>
                   ))}
                 </Row>
-              </Col>
+              </Col>*/}
             </Row>
             {/* Render Footer Link End */}
             <FooterLink />
